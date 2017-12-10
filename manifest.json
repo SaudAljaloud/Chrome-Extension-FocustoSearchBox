@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Focus to Search Box",
+    "version": "0.0.1",
+    "description": "A chrome extension to map double escape keystroke to the first textbox on the page.",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["keymaster.js","keymaster-sequences.js", "bg.js"]
+    }],
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    }
+}
